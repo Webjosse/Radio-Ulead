@@ -479,6 +479,10 @@ class Employ{
       hideTuto();
       window.waited = "create_program";
     };
+    if (window.actualEdit !== null){
+      BODY.removeChild(window.actualEdit);
+      window.actualEdit = null;
+    };
     var self = this.Employ;
     var fen = document.createElement("div");
     fen.className = "fen";
