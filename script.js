@@ -520,6 +520,7 @@ class Employ{
           new Contrat(name,"song",0,this.pop+Math.floor(this.pop/3)*r,Math.floor(this.vit*0.4),true);
           if (window.tutoFrame.parentNode == window.BODY) hideTuto();
           window.tutoFrame.firstChild.innerHTML = 'Tu as un nouveau contrat GRATUIT. Cependant, sa popularité va baisser, tu peux le supprimer à tout moment avec un clic droit';
+          window.tutoFrame.onclick = hideTuto;
           window.BODY.appendChild(window.tutoFrame);
         }else{
           new Program(name,window.progs[this.func],this.pop+Math.floor(this.pop/3)*r,Math.floor(this.vit*0.7));
