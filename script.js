@@ -293,7 +293,6 @@ class Contrat{
           if (self.name == "Caedes (Mountamare remix)") update_contrats(1);
           if (self.name == "Final Game") update_contrats(3);
           if (self.name == "HELL") update_contrats(5);
-          if (self.name == "Final Game") add_theme("Iwatch", "I watch them grow while I don't");
           if (self.name == "One Man Chaud") add_theme("Reb","RythmBeca");
           if (self.name == "Old Dream") add_theme("Air","Airborne");
         };

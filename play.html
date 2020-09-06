@@ -3,11 +3,17 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-    <title>Radio Ulead</title>
+    <title>Radio Ulead Beta 0.9</title>
+    <script src="script.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="SQ_Radio.ico" type="image/x-icon" />
   </head>
   <body>
+    <script type="text/javascript">
+      if (!window.running_on){
+        alert("Nous vous informons que le jeu ne fonctionnera pas sur votre navigateur");
+      };
+    </script>
     <header>
       <div class="Hzone">
         <p><select name="theme" id="muselect" onchange="change_theme();">
@@ -21,6 +27,13 @@
         <a href="about.html">À Propos</a>
       </div>
     </header>
-    <center><h1 style="color: #60FF97;">Le projet sera disponible le 6 septembre, merci de patienter</h1></center>
+    <article>
+    <div class="program"><p><button class="add" id="differ" style="background-color:#60FF97;border-color:#60FF97;width:50%;" type="button" name="button" onclick="playpause(true);">Diffuser</button><span id="pub" onclick="ad();">PUB</span></p></div>
+    <div class="instudio">
+      <div class="employes"><p id="emplois"><button class="add" style="background-color:#60FF97;border-color:#60FF97;width:50%;" type="button" name="button" onclick="recruit();">Recruter</button><span class="emplois"></span></p></div>
+      <p id="sal_time"></p>
+    </div>
+    <div class="contrats"><button class="add" id="contrat" style="background-color:#60FF97;border-color:#60FF97;" type="button" name="button" onclick="shop();">Obtenir un Contrat</button></div>
+    </article>
   </body>
 </html>
